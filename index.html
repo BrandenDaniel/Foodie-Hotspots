@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Foodie Hotspots</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="outer-border">
+
+      <!-- NAVIGATOR -->
+      <nav>
+        <h1>FOODIE HOTSPOTS</h1>
+        <p class="title-intro">Search for great food anytime, anywhere.</p>
+      </nav>
+
+      <!-- FILTER OPTIONS -->
+      <section class="filter-options">
+
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <option value="all">All Neighborhoods</option>
+        </select>
+
+        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <option value="all">All Cuisines</option>
+        </select>
+        <a href="#" id="search-submit">Search!</a>
+
+      </section>
+    </div>
+  </header>
+
+  <!-- MAP -->
+  <section id="map-container">
+    <div id="map" role="application"></div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="maincontent">
+    <section>
+      <h2 class="results">Results are in!</h2>
+      <ul id="restaurants-list"></ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-brand">FOODIE HOTSPOTS</span>
+    <span class="copyright">Copyright &copy; 2018 All Rights Reserved.</span>
+  </footer>
+
+
+  <script src="js/app.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGsP2SMqS6ls7WyQTE9Inwh8X9F_0piI4&libraries=places&callback=initMap"></script>
+</body>
+
+</html>
