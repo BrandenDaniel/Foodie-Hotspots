@@ -36,10 +36,12 @@ a img {
   max-width: 800px;
   width: 80%;
   margin: 0 auto;
+  border-radius: 0 0 8px 8px;
 }
 
 .inside #maincontent {
   width: 100%;
+  border-radius: 0 0 8px 8px;
 }
 
 #footer {
@@ -72,7 +74,7 @@ a img {
 footer {
   background: tomato;
   text-align: center;
-  margin: -1.25em 0 1em 0;
+  margin: -1.2em 0 1em 0;
 }
 
 .inside footer {
@@ -312,7 +314,7 @@ header {
 /* ====================== Restaurant Details ====================== */
 
 .inside {
-  width: 80% !important;
+  width: 80%;
   margin: 0 auto;
   background: tomato;
 }
@@ -365,6 +367,7 @@ header {
   max-width: 550px;
   width: 80%;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 #restaurant-address {
@@ -521,23 +524,37 @@ header {
 
 @media (max-width: 560px) {
   header {
-    margin: 30px 0 30px 0;
+    margin: 20px auto 20px auto;
+    text-align: center;
   }
   .inside header {
-    margin: 30px auto 30px auto;
+    margin: 20px auto 20px auto;
   }
   nav h1 {
-    font-size: 1.1em;
+    font-size: 1.4em;
+  }
+  .title-intro {
+    font-size: .95em;
+    margin-bottom: 1em;
+  }
+  .restaurant-nav {
+    margin: 0 auto;
+  }
+  #map, .inside {
+    width: 90%;
+  }
+  #map-container, .inside #map-container {
+    margin-bottom: 20px;
   }
   .outer-border, .restaurant-nav {
     padding-top: .7em;
-  }
-  .title-intro {
-    font-size: .8em;
-    margin-bottom: 1em;
+    width: 90%;
   }
   .results {
     padding-top: 1em;
+  }
+  #maincontent {
+    width: 90%;
   }
   .cuisine-address {
     width: 100%;
@@ -550,7 +567,7 @@ header {
     font-size: .7em;
   }
   #neighborhoods-select, #cuisines-select {
-    font-size: .85em;
+    font-size: .95em;
     height: 25px;
   }
   #breadcrumb li {
@@ -563,7 +580,7 @@ header {
     font-size: 1.2em;
   }
   #restaurant-name {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .day {
     text-align: left;
@@ -579,6 +596,7 @@ header {
   }
   #reviews-list li {
     padding: 0 .7em .5em .7em;
+    width: 90%;
   }
   #reviews-container {
     padding-bottom: .5em;
@@ -594,6 +612,12 @@ header {
     font-size: .7em;
     padding: .5em 1em .4em 1em;
   }
+  #restaurants-list {
+    margin-bottom: 0;
+  }
+  footer {
+    margin: .7em 0;
+  }
   .footer-brand {
     font-size: .75em;
   }
@@ -607,13 +631,13 @@ header {
     font-size: .7em;
   }
   .reviewer-comment {
-    font-size: .7em;
+    font-size: .8em;
   }
 }
 
 @media (max-width: 380px) {
   nav h1 {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .outer-border, .restaurant-nav {
     padding-top: .75em;
@@ -622,11 +646,11 @@ header {
     padding-bottom: 0.2em;
   }
   .title-intro {
-    font-size: .8em;
+    font-size: .9em;
     margin-bottom: 1em;
   }
   #neighborhoods-select, #cuisines-select {
-    font-size: .8em;
+    font-size: .85em;
     height: 25px;
   }
   #search-submit {
@@ -640,7 +664,10 @@ header {
   #breadcrumb li {
     font-size: .75em;
   }
-  #restaurant-name {
-    font-size: .9em !important;
+  #restaurant-cuisine {
+    font-size: 1em;
+  }
+  #restaurant-address {
+    font-size: .9em;
   }
 }
