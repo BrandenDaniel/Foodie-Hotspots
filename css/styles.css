@@ -167,6 +167,7 @@ header {
 
 #map {
   height: 32vh;
+  max-height: 350px;
   margin: 0 auto;
   background-color: tomato;
   max-width: 800px;
@@ -335,6 +336,7 @@ header {
   background: tomato none repeat scroll 0 0;
   height: 32vh;
   margin: 0 auto 30px auto;
+  max-height: 350px;
 }
 
 .inside #map {
